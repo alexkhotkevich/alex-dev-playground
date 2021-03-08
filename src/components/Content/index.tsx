@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Box, Grid, Paper } from '@material-ui/core'
 
 import avatar from 'assets/img/avatar.svg'
