@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import { useStore } from 'effector-react'
 import { $isMenuOpen, closeMenu, openMenu } from 'store'
 
-import { GitHubIcon, InfoIcon, VKIcon } from 'icons'
+import { FacebookIcon, GitHubIcon, InfoIcon, VKIcon } from 'icons'
 
 import { useStyles } from './useStyles'
 export const LeftMenu = () => {
@@ -21,17 +21,33 @@ export const LeftMenu = () => {
   const list = () => (
     <div className={classes.list} role='presentation'>
       <List>
-        <ListItem button component='a' href='https://vk.com/' rel='noreferrer noopener' target='_blank'>
+        <ListItem
+          button
+          component='a'
+          href='https://github.com/alexkhotkevich'
+          rel='noreferrer noopener'
+          target='_blank'>
+          <ListItemIcon>
+            <GitHubIcon />
+          </ListItemIcon>
+          <ListItemText primary='GitHub' />
+        </ListItem>
+        <ListItem button component='a' href='https://vk.com/alexkhotkevich' rel='noreferrer noopener' target='_blank'>
           <ListItemIcon>
             <VKIcon />
           </ListItemIcon>
           <ListItemText primary='VK' />
         </ListItem>
-        <ListItem button component='a' href='https://github.com/' rel='noreferrer noopener' target='_blank'>
+        <ListItem
+          button
+          component='a'
+          href='https://www.facebook.com/alexkhotkevich'
+          rel='noreferrer noopener'
+          target='_blank'>
           <ListItemIcon>
-            <GitHubIcon />
+            <FacebookIcon />
           </ListItemIcon>
-          <ListItemText primary='GitHub' />
+          <ListItemText primary='Facebook' />
         </ListItem>
       </List>
       <Divider />
