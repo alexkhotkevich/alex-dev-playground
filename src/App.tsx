@@ -13,6 +13,11 @@ import { $theme, setTheme } from 'store'
 export const App = () => {
   const theme = useStore($theme)
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+  console.log(window.visualViewport.width)
+  console.log(window.visualViewport.height)
+  // const isWide = useMediaQuery('(min-aspect-ratio: 16/10)')
+  // const isUltraWide = useMediaQuery('(min-aspect-ratio: 18/9)')
+
   useEffect(() => {
     setTheme(prefersDarkMode ? 'dark' : 'light')
   }, [prefersDarkMode])
