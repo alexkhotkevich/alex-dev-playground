@@ -58,7 +58,7 @@ export const LeftMenu = () => {
           <ListItemIcon>
             <InstagramIcon />
           </ListItemIcon>
-          <ListItemText primary='Facebook' />
+          <ListItemText primary='Instagram' />
         </ListItem>
       </List>
       <Divider />
