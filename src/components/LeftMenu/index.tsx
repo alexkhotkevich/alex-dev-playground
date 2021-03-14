@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import { useStore } from 'effector-react'
 import { $isMenuOpen, closeMenu, openMenu } from 'store'
 
-import { FacebookIcon, GitHubIcon, InfoIcon, VKIcon } from 'icons'
+import { FacebookIcon, GitHubIcon, InfoIcon, InstagramIcon, VKIcon } from 'icons'
 
 import { useStyles } from './useStyles'
 export const LeftMenu = () => {
@@ -46,6 +46,17 @@ export const LeftMenu = () => {
           target='_blank'>
           <ListItemIcon>
             <FacebookIcon />
+          </ListItemIcon>
+          <ListItemText primary='Facebook' />
+        </ListItem>
+        <ListItem
+          button
+          component='a'
+          href='https://www.instagram.com/alexkhotkevich/'
+          rel='noreferrer noopener'
+          target='_blank'>
+          <ListItemIcon>
+            <InstagramIcon />
           </ListItemIcon>
           <ListItemText primary='Facebook' />
         </ListItem>
