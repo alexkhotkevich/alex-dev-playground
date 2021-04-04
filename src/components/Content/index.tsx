@@ -8,15 +8,15 @@ export const Content: React.FC = ({ children }) => {
 
   return (
     <Grid container direction='column' alignItems='center' classes={classes} className={classes.dusk}>
-      <Paper style={{ width: '61.8vw', marginTop: 80 }}>
-        <Grid
+      <Paper classes={{ root: classes.paperRoot }}>
+        {/* <Grid
           container
           direction='column'
           justify='center'
           alignItems='center'
-          style={{ width: '100%', height: '100%' }}>
-          {children}
-        </Grid>
+          style={{ width: '100%', height: '100%' }}> */}
+        {children}
+        {/* </Grid> */}
       </Paper>
     </Grid>
   )
