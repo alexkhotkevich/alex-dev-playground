@@ -11,6 +11,7 @@ import { LeftMenu } from 'components/LeftMenu'
 import { Content } from 'components/Content'
 
 import { $theme, setTheme } from 'store'
+import { Router } from 'router'
 
 export const App = () => {
   const theme = useStore($theme)
@@ -37,7 +38,9 @@ export const App = () => {
         <CssBaseline />
         <TopAppBar />
         <LeftMenu />
-        <Content />
+        <Content>
+          <Router />
+        </Content>
       </ThemeProvider>
     </BrowserRouter>
   )

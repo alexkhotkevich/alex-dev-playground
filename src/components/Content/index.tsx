@@ -1,11 +1,13 @@
 import React from 'react'
-import { Box, Grid, Paper } from '@material-ui/core'
+import { Grid, Paper } from '@material-ui/core'
 
-import avatar from 'assets/img/avatar.svg'
+import { useStyles } from './useStyles'
 
-export const Content = () => {
+export const Content: React.FC = ({ children }) => {
+  const classes = useStyles()
+
   return (
-    <Grid container direction='column' justify='center' alignItems='center' style={{ minHeight: '100vh' }}>
+    <Grid container direction='column' alignItems='center' classes={classes} className={classes.dusk}>
       <Paper style={{ width: '61.8vw', marginTop: 80 }}>
         <Grid
           container
@@ -13,9 +15,7 @@ export const Content = () => {
           justify='center'
           alignItems='center'
           style={{ width: '100%', height: '100%' }}>
-          <Box p={2}>
-            <img src={avatar} className='App-logo' alt='logo' />
-          </Box>
+          {children}
         </Grid>
       </Paper>
     </Grid>
