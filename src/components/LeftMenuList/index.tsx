@@ -1,5 +1,5 @@
 import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
-import { FacebookIcon, GitHubIcon, InfoIcon, InstagramIcon, VKIcon } from 'icons'
+import { FacebookIcon, GitHubIcon, InfoIcon, InstagramIcon, Layers, VKIcon } from 'icons'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useStyles } from './useStyles'
@@ -56,6 +56,12 @@ export const LeftMenuList = () => {
             <InfoIcon />
           </ListItemIcon>
           <ListItemText primary='About' />
+        </ListItem>
+        <ListItem button component={Link} to='/ui-kit'>
+          <ListItemIcon>
+            <Layers />
+          </ListItemIcon>
+          <ListItemText primary='UI kit' />
         </ListItem>
       </List>
     </div>
