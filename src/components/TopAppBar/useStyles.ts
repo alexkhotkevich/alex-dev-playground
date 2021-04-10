@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     appBar: {
       backgroundColor: `transparent`,
-      backdropFilter: `blur(1rem) saturate(100%) contrast(33%) brightness(125%)`,
+      backdropFilter: `blur(.5rem) saturate(100%) contrast(50%) brightness(125%)`,
       zIndex: theme.zIndex.drawer + 1,
     },
     menuButton: {
