@@ -15,12 +15,7 @@ export const TopAppBar = () => {
   return (
     <AppBar position='fixed' className={classes.appBar}>
       <Toolbar>
-        <IconButton
-          edge='start'
-          className={classes.menuButton}
-          color='inherit'
-          aria-label='menu'
-          onClick={() => toggleMenu()}>
+        <IconButton edge='start' className={classes.menuButton} aria-label='menu' onClick={() => toggleMenu()}>
           <MenuIcon />
         </IconButton>
         <div className={classes.title}>
@@ -30,7 +25,6 @@ export const TopAppBar = () => {
         </div>
 
         <IconButton
-          color='inherit'
           edge='end'
           aria-label='toggle theme'
           onClick={() => {

@@ -6,6 +6,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     appBar: {
+      color: `inherit`,
       backgroundColor: `transparent`,
       backdropFilter: `blur(.5rem) saturate(100%) contrast(50%) brightness(125%)`,
       zIndex: theme.zIndex.drawer + 1,
