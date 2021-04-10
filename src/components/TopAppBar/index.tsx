@@ -13,34 +13,33 @@ export const TopAppBar = () => {
   const [dark, setDark] = useLocalStorage('dark')
 
   return (
-    <div className={classes.root}>
-      <AppBar position='fixed' className={classes.appBar}>
-        <Toolbar>
-          <IconButton
-            edge='start'
-            className={classes.menuButton}
-            color='inherit'
-            aria-label='menu'
-            onClick={() => toggleMenu()}>
-            <MenuIcon />
-          </IconButton>
-
-          <Link variant='h6' className={classes.title} component={RouterLink} to={'/'} color='inherit' underline='none'>
+    <AppBar position='fixed' className={classes.appBar}>
+      <Toolbar>
+        <IconButton
+          edge='start'
+          className={classes.menuButton}
+          color='inherit'
+          aria-label='menu'
+          onClick={() => toggleMenu()}>
+          <MenuIcon />
+        </IconButton>
+        <div className={classes.title}>
+          <Link variant='h6' component={RouterLink} to={'/'} color='inherit' underline='none'>
             Alex Playground
           </Link>
+        </div>
 
-          <IconButton
-            color='inherit'
-            edge='end'
-            aria-label='toggle theme'
-            onClick={() => {
-              toggleTheme()
-              setDark(!dark)
-            }}>
-            <BrightnessIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-    </div>
+        <IconButton
+          color='inherit'
+          edge='end'
+          aria-label='toggle theme'
+          onClick={() => {
+            toggleTheme()
+            setDark(!dark)
+          }}>
+          <BrightnessIcon />
+        </IconButton>
+      </Toolbar>
+    </AppBar>
   )
 }

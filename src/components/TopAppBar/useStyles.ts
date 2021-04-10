@@ -6,6 +6,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     appBar: {
+      backgroundColor: `transparent`,
+      backdropFilter: `blur(1rem) saturate(100%) contrast(33%) brightness(125%)`,
       zIndex: theme.zIndex.drawer + 1,
     },
     menuButton: {
