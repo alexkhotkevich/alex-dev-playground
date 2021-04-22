@@ -1,5 +1,5 @@
 import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
-import { FacebookIcon, GitHubIcon, InfoIcon, InstagramIcon, Layers, VKIcon } from 'icons'
+import { FacebookIcon, GitHubIcon, InfoIcon, InstagramIcon, Layers, VKIcon, CodeStatsIcon } from 'icons'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useStyles } from './useStyles'
@@ -19,6 +19,17 @@ export const LeftMenuList = () => {
             <GitHubIcon />
           </ListItemIcon>
           <ListItemText primary='GitHub' />
+        </ListItem>
+        <ListItem
+          button
+          component='a'
+          href='https://codestats.net/users/alexkhotkevich'
+          rel='noreferrer noopener'
+          target='_blank'>
+          <ListItemIcon>
+            <CodeStatsIcon />
+          </ListItemIcon>
+          <ListItemText primary='CodeStats' />
         </ListItem>
         <ListItem button component='a' href='https://vk.com/alexkhotkevich' rel='noreferrer noopener' target='_blank'>
           <ListItemIcon>
