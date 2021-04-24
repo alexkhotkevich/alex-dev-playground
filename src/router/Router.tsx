@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
-import { About, Main, NotFound, UIKit } from 'components/Pages'
+import { About, Main, NotFound, UIKit } from 'pages'
 
 export const Router = () => {
   return (

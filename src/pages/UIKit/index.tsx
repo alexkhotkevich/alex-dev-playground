@@ -1,4 +1,5 @@
 import { Tab, Tabs, Typography } from '@material-ui/core'
+import { Card } from 'components/Card'
 import React from 'react'
 import { MuiTypography } from './MuiTypography'
 
@@ -22,7 +23,7 @@ export const UIKit = () => {
   }
 
   return (
-    <>
+    <Card>
       <Typography gutterBottom variant='h1'>
         UIKit
       </Typography>
@@ -34,6 +35,6 @@ export const UIKit = () => {
       </Tabs>
 
       {tabs[active]}
-    </>
+    </Card>
   )
 }
