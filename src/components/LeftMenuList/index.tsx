@@ -1,78 +1,93 @@
 import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
-import { FacebookIcon, GitHubIcon, InfoIcon, InstagramIcon, Layers, VKIcon, CodeStatsIcon } from 'icons'
-import React from 'react'
+import { CodeStatsIcon, FacebookIcon, GitHubIcon, GraphIcon, InfoIcon, InstagramIcon, Layers, VKIcon } from 'icons'
 import { Link } from 'react-router-dom'
 import { useStyles } from './useStyles'
 export const LeftMenuList = () => {
   const classes = useStyles()
 
   return (
-    <div className={classes.list} role='presentation'>
+    <div className={classes.list} role="presentation">
       <List>
         <ListItem
           button
-          component='a'
-          href='https://github.com/alexkhotkevich'
-          rel='noreferrer noopener'
-          target='_blank'>
+          component="a"
+          href="https://alex-graph-theory.web.app"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <ListItemIcon>
+            <GraphIcon />
+          </ListItemIcon>
+          <ListItemText primary="Graph Theory" />
+        </ListItem>
+        <ListItem
+          button
+          component="a"
+          href="https://github.com/alexkhotkevich"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <ListItemIcon>
             <GitHubIcon />
           </ListItemIcon>
-          <ListItemText primary='GitHub' />
+          <ListItemText primary="GitHub" />
         </ListItem>
         <ListItem
           button
-          component='a'
-          href='https://codestats.net/users/alexkhotkevich'
-          rel='noreferrer noopener'
-          target='_blank'>
+          component="a"
+          href="https://codestats.net/users/alexkhotkevich"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <ListItemIcon>
             <CodeStatsIcon />
           </ListItemIcon>
-          <ListItemText primary='CodeStats' />
+          <ListItemText primary="CodeStats" />
         </ListItem>
-        <ListItem button component='a' href='https://vk.com/alexkhotkevich' rel='noreferrer noopener' target='_blank'>
+        <ListItem button component="a" href="https://vk.com/alexkhotkevich" rel="noreferrer noopener" target="_blank">
           <ListItemIcon>
             <VKIcon />
           </ListItemIcon>
-          <ListItemText primary='VK' />
+          <ListItemText primary="VK" />
         </ListItem>
         <ListItem
           button
-          component='a'
-          href='https://www.facebook.com/alexkhotkevich'
-          rel='noreferrer noopener'
-          target='_blank'>
+          component="a"
+          href="https://www.facebook.com/alexkhotkevich"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <ListItemIcon>
             <FacebookIcon />
           </ListItemIcon>
-          <ListItemText primary='Facebook' />
+          <ListItemText primary="Facebook" />
         </ListItem>
         <ListItem
           button
-          component='a'
-          href='https://www.instagram.com/alexkhotkevich/'
-          rel='noreferrer noopener'
-          target='_blank'>
+          component="a"
+          href="https://www.instagram.com/alexkhotkevich/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <ListItemIcon>
             <InstagramIcon />
           </ListItemIcon>
-          <ListItemText primary='Instagram' />
+          <ListItemText primary="Instagram" />
         </ListItem>
       </List>
-      <Divider light variant='middle' />
+      <Divider light variant="middle" />
       <List>
-        <ListItem button component={Link} to='/about'>
+        <ListItem button component={Link} to="/about">
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
-          <ListItemText primary='About' />
+          <ListItemText primary="About" />
         </ListItem>
-        <ListItem button component={Link} to='/ui-kit'>
+        <ListItem button component={Link} to="/ui-kit">
           <ListItemIcon>
             <Layers />
           </ListItemIcon>
-          <ListItemText primary='UI kit' />
+          <ListItemText primary="UI kit" />
         </ListItem>
       </List>
     </div>
